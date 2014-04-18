@@ -21,14 +21,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.google</groupId>
-        <artifactId>quarkcoinj-parent</artifactId>
+        <artifactId>dimecoinj-parent</artifactId>
         <version>0.12-SNAPSHOT</version>
     </parent>
 
-    <artifactId>quarkcoinj</artifactId>
+    <artifactId>dimecoinj</artifactId>
 
-    <name>quarkcoinj</name>
-    <description>A Java quarkcoin library</description>
+    <name>dimecoinj</name>
+    <description>A Java dimecoin library</description>
 
     <packaging>jar</packaging>
 
@@ -194,7 +194,7 @@
             <version>3.0</version>
             <scope>test</scope>
         </dependency>
-        <!-- quarkcoinj consumers are expected to provide their own SLF4J adapters
+        <!-- dimecoinj consumers are expected to provide their own SLF4J adapters
              such as logback, slf4j-log4j12, slf4j-jcl and so on
              see http://www.slf4j.org/faq.html -->
         <dependency>

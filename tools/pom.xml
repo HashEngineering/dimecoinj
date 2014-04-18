@@ -21,16 +21,16 @@
   <parent>
     <groupId>com.google</groupId>
 
-    <artifactId>quarkcoinj-parent</artifactId>
+    <artifactId>dimecoinj-parent</artifactId>
     <version>0.12-SNAPSHOT</version>
 
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>quarkcoinj-tools</artifactId>
+  <artifactId>dimecoinj-tools</artifactId>
 
-  <name>quarkcoinj Tools</name>
-  <description>A collection of useful tools that use the quarkcoinj library to perform wallet operations</description>
+  <name>dimecoinj Tools</name>
+  <description>A collection of useful tools that use the dimecoinj library to perform wallet operations</description>
 
   <build>
       <plugins>
@@ -73,7 +73,7 @@
   <dependencies>
     <dependency>
       <groupId>com.google</groupId>
-      <artifactId>quarkcoinj</artifactId>
+      <artifactId>dimecoinj</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>

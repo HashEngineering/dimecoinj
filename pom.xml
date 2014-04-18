@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.google</groupId>
-  <artifactId>quarkcoinj-parent</artifactId>
+  <artifactId>dimecoinj-parent</artifactId>
   <version>0.12-SNAPSHOT</version>
   <packaging>pom</packaging>
 

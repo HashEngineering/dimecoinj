@@ -20,20 +20,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>com.google</groupId>
-        <artifactId>quarkcoinj-parent</artifactId>
+        <artifactId>dimecoinj-parent</artifactId>
         <version>0.12-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quarkcoinj-examples</artifactId>
+    <artifactId>dimecoinj-examples</artifactId>
 
-    <name>quarkcoinj Examples</name>
-    <description>A collection of examples using the quarkcoinj library</description>
+    <name>dimecoinj Examples</name>
+    <description>A collection of examples using the dimecoinj library</description>
 
     <dependencies>
         <dependency>
             <groupId>com.google</groupId>
-            <artifactId>quarkcoinj</artifactId>
+            <artifactId>dimecoinj</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
