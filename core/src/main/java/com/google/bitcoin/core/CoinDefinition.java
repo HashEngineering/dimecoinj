@@ -24,11 +24,11 @@ import sun.management.resources.agent_ko;
 public class CoinDefinition {
     private static final Logger log = LoggerFactory.getLogger(CoinDefinition.class);
 
-    public static final String coinName = "Quark";
+    public static final String coinName = "Dimecoin";
     public static final String coinTicker = "QRK";
-    public static final String coinURIScheme = "quark";
-    public static final String coinURIScheme2 = "quarkcoin";
-    public static final String coinInternalName = "quarkcoin";
+    public static final String coinURIScheme = "dime";
+    public static final String coinURIScheme2 = "dimecoin";
+    public static final String coinInternalName = "dimecoin";
     public static final String cryptsyMarketId = "71";
     public static final String cryptsyMarketCurrency = "BTC";
     public static final String PATTERN_PRIVATE_KEY_START = "6";
@@ -76,7 +76,7 @@ public class CoinDefinition {
     {
             return value / 2;
     }
-    public static int spendableCoinbaseDepth = 240; //main.h: static const int COINBASE_MATURITY
+    public static int spendableCoinbaseDepth = 50; //main.h: static const int COINBASE_MATURITY
 
     public static BigInteger COIN = BigInteger.valueOf(100000);
     public static BigInteger CENT = BigInteger.valueOf(1000);

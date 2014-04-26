@@ -1,4 +1,4 @@
-package hashengineering.quark.crypto;
+package com.hashengineering.crypto;
 
 import com.google.bitcoin.core.Sha256Hash;
 import com.google.bitcoin.core.Sha512Hash;
