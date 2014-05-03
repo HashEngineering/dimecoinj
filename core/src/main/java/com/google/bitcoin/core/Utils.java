@@ -54,13 +54,13 @@ public class Utils {
     }
 
     /** The string that prefixes all text messages signed using Bitcoin keys. */
-    public static final String BITCOIN_SIGNED_MESSAGE_HEADER = "Quarkcoin Signed Message:\n";
+    public static final String BITCOIN_SIGNED_MESSAGE_HEADER = "Dimecoin Signed Message:\n";
     public static final byte[] BITCOIN_SIGNED_MESSAGE_HEADER_BYTES = BITCOIN_SIGNED_MESSAGE_HEADER.getBytes(Charsets.UTF_8);
 
     // TODO: Replace this nanocoins business with something better.
 
     /**
-     * How many "nanocoins" there are in a Quark.
+     * How many "nanocoins" there are in a Dimecoin.
      * <p/>
      * A nanocoin is the smallest unit that can be transferred using Bitcoin.
      * The term nanocoin is very misleading, though, because there are only 100 million

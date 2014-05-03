@@ -1009,10 +1009,14 @@ public abstract class AbstractBlockChain {
         int timespan = (int) (prev.getTimeSeconds() - blockIntervalAgo.getTimeSeconds());
         // Limit the adjustment step.
         final int targetTimespan = params.getTargetTimespan();
-        if (timespan < targetTimespan * 100 / 110)
-            timespan = targetTimespan * 100 / 110;
-        if (timespan > targetTimespan * 2)
-            timespan = targetTimespan * 2;
+
+        int LimUp = targetTimespan * 100 / 110; // 110% up
+        int LimDown = targetTimespan * 2; // 200% down
+
+        if (timespan < LimUp)
+            timespan = LimUp;
+        if (timespan > LimDown)
+            timespan = LimDown;
 
         BigInteger newDifficulty = Utils.decodeCompactBits(prev.getDifficultyTarget());
         newDifficulty = newDifficulty.multiply(BigInteger.valueOf(timespan));
