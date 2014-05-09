@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by HashEngineering on 2/18/14.
+ * Created by Hash Engineering on 2/18/14.
  */
 public class Hash9 {
 
@@ -19,6 +19,10 @@ public class Hash9 {
         try {
             System.loadLibrary("hash9");
             native_library_loaded = true;
+        }
+        catch(UnsatisfiedLinkError e)
+        {
+            native_library_loaded = false;
         }
         catch(Exception e)
         {

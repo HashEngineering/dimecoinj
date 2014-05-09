@@ -98,8 +98,8 @@ public class CoinDefinition {
 
     public static final boolean supportsBloomFiltering = true; //Requires PROTOCOL_VERSION 70000 in the client
 
-    public static final int Port    = 11973;       //protocol.h GetDefaultPort(testnet=false)
-    public static final int TestPort = 21973;     //protocol.h GetDefaultPort(testnet=true)
+    public static final int Port    = 11931;       //protocol.h GetDefaultPort(testnet=false)
+    public static final int TestPort = 21931;     //protocol.h GetDefaultPort(testnet=true)
 
     //
     //  Production
@@ -112,19 +112,21 @@ public class CoinDefinition {
 
     //Genesis Block Information from main.cpp: LoadBlockIndex
     static public long genesisBlockDifficultyTarget = (0x1e0fffffL);         //main.cpp: LoadBlockIndex
-    static public long genesisBlockTime = 1373481000L;                       //main.cpp: LoadBlockIndex
+    static public long genesisBlockTime = 1387807823L;                       //main.cpp: LoadBlockIndex
     static public long genesisBlockNonce = (16888732);                         //main.cpp: LoadBlockIndex
     static public String genesisHash = "00000d5a9113f87575c77eb5442845ff8a0014f6e79e2dd2317d88946ef910da"; //main.cpp: hashGenesisBlock
+    static public String genesisMerkleRoot = "72596a6a36d42416b5486386c6e2b7e339782ef4eb49fb8a60ec7dc3475da545";
     static public int genesisBlockValue = 1;                                                              //main.cpp: LoadBlockIndex
     //taken from the raw data of the block explorer
-    static public String genesisXInBytes = "04ffff001d0104423231204a756c7920323031332c2054686520477561726469616e2c20546573636f20626f7373207361797320636865617020666f6f6420657261206973206f766572";   //"21 July 2013, The Guardian, Tesco boss says cheap food era is over"
+    static public String genesisXInBytes = "04";   //"BIN COIN START"
     static public String genessiXOutBytes = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
 
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
-
+        "dime.mine-pool.net",
+            "209.126.65.116"
     };
-    public static int minBroadcastConnections = 0;   //0 for default; we need more peers.
+    public static int minBroadcastConnections = 1;   //0 for default; we need more peers.
     //
     // TestNet - quarkcoin - not tested
     //

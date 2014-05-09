@@ -103,7 +103,7 @@ jint JNI_OnLoad(JavaVM *vm, void *reserved) {
         return -1;
     }
 
-    jclass cls = (env)->FindClass("hashengineering/quark/crypto/Hash9");
+    jclass cls = (env)->FindClass("com/hashengineering/crypto/Hash9");
     int r = (env)->RegisterNatives(cls, methods, 1);
 
     return (r == JNI_OK) ? JNI_VERSION_1_6 : -1;
