@@ -128,7 +128,7 @@ public class CoinDefinition {
     };
     public static int minBroadcastConnections = 1;   //0 for default; we need more peers.
     //
-    // TestNet - quarkcoin - not tested
+    // TestNet - dimecoin - not tested
     //
     public static final boolean supportsTestNet = false;
     public static final int testnetAddressHeader = 119;             //base58.h CBitcoinAddress::PUBKEY_ADDRESS_TEST
